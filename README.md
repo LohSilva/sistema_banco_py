@@ -30,12 +30,20 @@ Todas as transações testadas estão no arquivo exemplo_de_uso.txt na pasta inp
 *Resultado final*
 
 ================ EXTRATO BANCÁRIO ================
+
 Depósito: R$ 5000.00
+
 Saque: R$ 150.00
+
 Saque: R$ 350.00
+
 Transferência para conta 1234: R$ 850.00
+
 Depósito: R$ 650.00
+
 Saque: R$ 499.00
+
 Transferência para conta 1235: R$ 963.00
+
 
 Saldo: R$ 2838.00
