@@ -28,6 +28,7 @@
 Todas as transações testadas estão no arquivo exemplo_de_uso.txt na pasta inputs
 
 *Resultado final*
+
 ================ EXTRATO BANCÁRIO ================
 Depósito: R$ 5000.00
 Saque: R$ 150.00
