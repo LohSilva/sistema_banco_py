@@ -1,1 +1,273 @@
-# sistema_banco_py
+# ⚒️Desenvolvimento: Sistema Bancário
+
+**Objetivo:** O sistema simula o menu de um caixa eletrônico bancário, permitindo que o usuário realize as seguintes operações:
+
+- **Depósito:** Permite depositar valores na conta.
+- **Saque:** Permite sacar dinheiro da conta, com algumas restrições:
+  - Valor do saque não pode ser superior ao saldo disponível.
+  - Valor máximo por saque é de R$ 500,00.
+  - Quantidade máxima de saques por dia é 3.
+- **Extrato:** Mostra o histórico de movimentações da conta, incluindo depósitos, saques e transferências.
+- **Transferência:** Permite transferir valores para outras contas.
+- **Sair:** Encerra o programa.
+
+### Funcionamento:
+- O programa apresenta um menu com as opções disponíveis.
+- O usuário digita o número da opção desejada.
+- O programa valida a opção e executa a operação correspondente.
+- O programa informa o resultado da operação e retorna ao menu principal.
+
+### Mensagens de Erro:
+
+- **Saldo Insuficiente:** Aparece quando o valor do saque ou da transferência é superior ao saldo disponível na conta.
+- **Valor Inválido:** Aparece quando o valor digitado for negativo ou não for um número.
+- **Opção Inválida:** Aparece quando o usuário digitar um número que não corresponde a nenhuma opção do menu.
+
+### Exemplo de Uso:
+
+    [1] Depositar
+    [2] Sacar
+    [3] Extrato
+    [4] Transferir
+    [0] Sair
+
+3
+
+================ EXTRATO BANCÁRIO ================
+Não foram realizadas movimentações.
+
+Saldo: R$ 0.00
+==================================================
+
+
+    [1] Depositar
+    [2] Sacar
+    [3] Extrato
+    [4] Transferir
+    [0] Sair
+
+2
+Digite o valor do saque: 100
+Operação falhou! Saldo insuficiente.
+
+
+    [1] Depositar
+    [2] Sacar
+    [3] Extrato
+    [4] Transferir
+    [0] Sair
+
+1
+Digite o valor do depósito: 5000.00
+
+Depósito realizado com sucesso!
+
+
+    [1] Depositar
+    [2] Sacar
+    [3] Extrato
+    [4] Transferir
+    [0] Sair
+
+3
+
+================ EXTRATO BANCÁRIO ================
+Depósito: R$ 5000.00
+
+Saldo: R$ 5000.00
+==================================================
+
+
+    [1] Depositar
+    [2] Sacar
+    [3] Extrato
+    [4] Transferir
+    [0] Sair
+
+2
+Digite o valor do saque: 150
+
+Saque realizado com sucesso!
+
+
+    [1] Depositar
+    [2] Sacar
+    [3] Extrato
+    [4] Transferir
+    [0] Sair
+
+2
+Digite o valor do saque: 350
+
+Saque realizado com sucesso!
+
+
+    [1] Depositar
+    [2] Sacar
+    [3] Extrato
+    [4] Transferir
+    [0] Sair
+
+2
+Digite o valor do saque: 900
+Operação falhou! O valor do saque excede o limite.
+
+
+    [1] Depositar
+    [2] Sacar
+    [3] Extrato
+    [4] Transferir
+    [0] Sair
+
+4
+Digite o valor a ser transferido: 850
+Digite o número da conta de destino: 1234
+
+Transferência realizado com sucesso!
+
+
+    [1] Depositar
+    [2] Sacar
+    [3] Extrato
+    [4] Transferir
+    [0] Sair
+
+3
+
+================ EXTRATO BANCÁRIO ================
+Depósito: R$ 5000.00
+Saque: R$ 150.00
+Saque: R$ 350.00
+Transferência para conta 1234: R$ 850.00
+
+Saldo: R$ 3650.00
+==================================================
+
+
+    [1] Depositar
+    [2] Sacar
+    [3] Extrato
+    [4] Transferir
+    [0] Sair
+
+1
+Digite o valor do depósito: 650
+
+Depósito realizado com sucesso!
+
+
+    [1] Depositar
+    [2] Sacar
+    [3] Extrato
+    [4] Transferir
+    [0] Sair
+
+3
+
+================ EXTRATO BANCÁRIO ================
+Depósito: R$ 5000.00
+Saque: R$ 150.00
+Saque: R$ 350.00
+Transferência para conta 1234: R$ 850.00
+Depósito: R$ 650.00
+
+Saldo: R$ 4300.00
+==================================================
+
+
+    [1] Depositar
+    [2] Sacar
+    [3] Extrato
+    [4] Transferir
+    [0] Sair
+
+2
+Digite o valor do saque: 499
+
+Saque realizado com sucesso!
+
+
+    [1] Depositar
+    [2] Sacar
+    [3] Extrato
+    [4] Transferir
+    [0] Sair
+
+3
+
+================ EXTRATO BANCÁRIO ================
+Depósito: R$ 5000.00
+Saque: R$ 150.00
+Saque: R$ 350.00
+Transferência para conta 1234: R$ 850.00
+Depósito: R$ 650.00
+Saque: R$ 499.00
+
+Saldo: R$ 3801.00
+==================================================
+
+
+    [1] Depositar
+    [2] Sacar
+    [3] Extrato
+    [4] Transferir
+    [0] Sair
+
+2
+Digite o valor do saque: 150
+Operação falhou! Número máximo de saques excedido.
+
+
+    [1] Depositar
+    [2] Sacar
+    [3] Extrato
+    [4] Transferir
+    [0] Sair
+
+4
+Digite o valor a ser transferido: 963
+Digite o número da conta de destino: 1235
+
+Transferência realizado com sucesso!
+
+
+    [1] Depositar
+    [2] Sacar
+    [3] Extrato
+    [4] Transferir
+    [0] Sair
+
+3
+
+================ EXTRATO BANCÁRIO ================
+Depósito: R$ 5000.00
+Saque: R$ 150.00
+Saque: R$ 350.00
+Transferência para conta 1234: R$ 850.00
+Depósito: R$ 650.00
+Saque: R$ 499.00
+Transferência para conta 1235: R$ 963.00
+
+Saldo: R$ 2838.00
+==================================================
+
+
+    [1] Depositar
+    [2] Sacar
+    [3] Extrato
+    [4] Transferir
+    [0] Sair
+
+9
+Opção inválida. Por favor digite uma opção válida.
+
+
+    [1] Depositar
+    [2] Sacar
+    [3] Extrato
+    [4] Transferir
+    [0] Sair
+
+0
+
+Obrigado por utilizar o nosso caixa eletrônico!
